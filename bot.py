@@ -4,7 +4,7 @@ import discord
 from discord import Intents
 
 TOKEN = os.environ["DISCORD_BOT_TOKEN"]
-SOURCE_CHANNEL_ID = int(os.environ["https://discordapp.com/channels/1187388943776362637/1257895754140352562"])
+SOURCE_CHANNEL_ID = int(os.environ["1257895754140352562"])
 DEST_WEBHOOK_URL = os.environ["https://discordapp.com/api/webhooks/1406410280166101123/deKqoMLnb2HyBqkCVvahf21mAtd3bDlXGwi_94q4Wvb1pz3KedPgm5KHcV-eluQSAwuM"]
 
 intents = Intents.default()
@@ -30,3 +30,4 @@ class Relay(discord.Client):
 
 client = Relay(intents=intents)
 client.run(TOKEN)
+
